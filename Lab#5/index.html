@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <h1>打開開發者工具 (F12) 查看聖誕樹🎄</h1>
+
+    <script>
+        function tree(n) {
+            printTreeTop(n);
+            printTreeBottom(n);
+        }
+
+        function printTreeTop(n) {
+            // repeatchar(‘ ’, i) + repeatchar(‘*’, j)
+            for (let i = 0; i < n; i++) {
+                let spaces = repeatchar(n - i - 1, ' ');
+                let stars = repeatchar(2 * i + 1, '*');
+                console.log(spaces + stars);
+            }
+        }
+
+        function printTreeBottom(n) {
+            // repeatchar(‘ ’, i) + ‘*’
+            let trunkSpace = repeatchar(n - 1, ' ');
+            console.log(trunkSpace + '*');
+            console.log(trunkSpace + '*');
+        }
+
+        function repeatchar(n, arg_char) {
+            return arg_char.repeat(n);
+        }
+
+        // 在 Console 中畫出聖誕樹
+        tree(4);
+    </script>
+</html>
