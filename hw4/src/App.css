@@ -1,0 +1,23 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  /* background-color: #04AA6D; /* 整體背景變綠色 */
+  /* color: white; */
+}
+  
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 999px; /*圓角極大值 = 橢圓效果*/
+  /* background-color: #04AA6D; 綠色背景 */
+  /* color: white; */
+}
+
+
